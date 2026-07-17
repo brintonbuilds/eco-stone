@@ -118,10 +118,10 @@
 
         /* Selected Work - monumental dark feature */
         .selected-work { background: #0b0b0a; color: #f0eae1; overflow: hidden; }
-        .selected-work-intro { width: 100%; max-width: 1600px; min-height: 100svh; margin: 0 auto; padding: 7rem 22px 5rem; display: grid; grid-template-rows: auto 1fr auto; }
-        .selected-work-title { align-self: center; font-family: 'Inter', sans-serif; font-size: 2.75rem; font-weight: 500; line-height: .86; letter-spacing: 0; }
+        .selected-work-intro { width: 100%; max-width: 1600px; margin: 0 auto; padding: 5rem 22px 4.5rem; }
+        .selected-work-title { margin-top: 3.25rem; font-family: 'Inter', sans-serif; font-size: 2.75rem; font-weight: 500; line-height: .86; letter-spacing: 0; }
         .selected-work-title span { display: block; white-space: nowrap; }
-        .selected-work-summary { justify-self: start; max-width: 23rem; color: #aaa49a; font-size: 1.0625rem; line-height: 1.65; }
+        .selected-work-summary { max-width: 23rem; margin-top: 2.75rem; color: #aaa49a; font-size: 1.0625rem; line-height: 1.65; }
         html.work-scroll-reveal-ready .selected-work-scroll-eyebrow,
         html.work-scroll-reveal-ready .selected-work-scroll-line,
         html.work-scroll-reveal-ready .selected-work-scroll-summary { will-change: opacity, transform; }
@@ -198,9 +198,9 @@
         }
 
         @media (min-width: 768px) {
-            .selected-work-intro { padding: 10rem 80px 7rem; }
-            .selected-work-title { font-size: 5rem; }
-            .selected-work-summary { justify-self: end; }
+            .selected-work-intro { min-height: 100svh; padding: 10rem 80px 7rem; display: grid; grid-template-rows: auto 1fr auto; }
+            .selected-work-title { align-self: center; margin-top: 0; font-size: 5rem; }
+            .selected-work-summary { justify-self: end; margin-top: 0; }
             .selected-work-gallery { padding-bottom: 10rem; }
             .project-chapter + .project-chapter { margin-top: 14rem; }
             .project-header { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 2rem; width: calc(100% - 160px); padding: 4rem 0; }
