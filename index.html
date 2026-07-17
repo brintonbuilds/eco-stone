@@ -117,6 +117,9 @@
         .project-description { max-width: 34rem; color: #aaa49a; font-size: 1rem; line-height: 1.7; }
         .project-hero { width: calc(100% - 44px); margin: 1.5rem auto 0; }
         .project-duo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 5rem; width: calc(100% - 44px); margin: 6rem auto 0; }
+        .project-duo--featured { gap: 3.75rem; margin-top: 4.75rem; }
+        .project-duo--featured .project-figure:first-child { width: 92%; }
+        .project-duo--featured .project-figure:last-child { width: 100%; margin-left: auto; }
         .project-wide { width: calc(100% - 44px); margin: 6rem auto 0; }
         .project-figure { min-width: 0; margin: 0; }
         .project-image-button { display: block; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; cursor: zoom-in; }
@@ -190,6 +193,10 @@
             .project-duo { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 2rem; width: calc(100% - 160px); max-width: 1320px; margin-top: 10rem; }
             .project-duo .project-figure:first-child { grid-column: 1 / span 5; }
             .project-duo .project-figure:last-child { grid-column: 7 / span 6; margin-top: 8rem; }
+            .project-duo--featured { grid-template-columns: minmax(0, .84fr) minmax(0, 1fr); column-gap: clamp(2.5rem, 3vw, 4rem); width: calc(100% - 80px); max-width: 1540px; margin-top: 8rem; }
+            .project-duo--featured .project-figure:first-child { grid-column: 1; width: 100%; }
+            .project-duo--featured .project-figure:last-child { grid-column: 2; width: 100%; margin-top: 5rem; }
+            .project-duo--featured + .project-expand-control { margin-top: 4.75rem; }
             .project-duo--reverse .project-figure:first-child { grid-column: 7 / span 6; }
             .project-duo--reverse .project-figure:last-child { grid-column: 1 / span 5; grid-row: 1; margin-top: 9rem; }
             .project-wide { width: calc(100% - 160px); max-width: 1180px; margin-top: 11rem; }
@@ -221,7 +228,12 @@
         @media (min-width: 1536px) {
             .selected-work-title { font-size: 10.75rem; }
             .project-header, .project-duo, .project-expand-control, .project-room-heading, .project-collapse-control { max-width: 1440px; }
+            .project-duo--featured { max-width: 1540px; }
             .project-wide { max-width: 1320px; }
+        }
+
+        @media (min-width: 1920px) {
+            .project-duo--featured { width: 80vw; max-width: 1920px; }
         }
 
         @media (max-width: 767px) {
@@ -503,7 +515,7 @@
 <span class="project-image-frame project-image-frame--landscape"><img alt="Warm wood kitchen with a pale stone island, rounded end and matching perimeter surfaces" src="images/gallery/p01-01-kitchen-1200.webp" srcset="images/gallery/p01-01-kitchen-1200.webp 1200w, images/gallery/p01-01-kitchen-2400.webp 2400w, images/gallery/p01-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span>
 </button><figcaption class="project-caption"><span>Island and perimeter</span><span class="project-caption-room">Kitchen</span></figcaption>
 </figure>
-<div class="project-duo">
+<div class="project-duo project-duo--featured">
 <figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-04-living-2400.webp" data-project="Warm Wood Residence" data-room="Living Room · Fireplace wall" aria-label="Open full-screen view of the living room fireplace wall"><span class="project-image-frame project-image-frame--landscape"><img alt="Living room with a pale stone fireplace surround and warm vertical wood detailing" src="images/gallery/p01-04-living-1200.webp" srcset="images/gallery/p01-04-living-1200.webp 1200w, images/gallery/p01-04-living-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Fireplace wall</span><span class="project-caption-room">Living Room</span></figcaption></figure>
 <figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-06-bathroom-2400.webp" data-project="Warm Wood Residence" data-room="Bathroom · Stone-lined bathing area" aria-label="Open full-screen view of the bathroom stonework"><span class="project-image-frame project-image-frame--portrait"><img alt="Bright bathroom with pale stone surfaces around the bathing area" src="images/gallery/p01-06-bathroom-1200.webp" srcset="images/gallery/p01-06-bathroom-1200.webp 1200w, images/gallery/p01-06-bathroom-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Restrained finish</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
 </div>
@@ -532,7 +544,7 @@
 <div class="project-copy"><span class="project-scope">Kitchen · Bathroom · Living Room</span><p class="project-description">Dark, richly figured surfaces wrap the island, work wall and fireplace in one continuous material language. The result is graphic and grounded, with the stone carrying each room.</p></div>
 </header>
 <figure class="project-figure project-hero reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-01-kitchen-3200.webp" data-project="Black Stone Residence" data-room="Kitchen · Full installation" aria-label="Open full-screen view of the Black Stone Residence kitchen"><span class="project-image-frame project-image-frame--landscape"><img alt="Dark cabinetry kitchen with a richly figured stone island and full-height backsplash" src="images/gallery/p02-01-kitchen-1200.webp" srcset="images/gallery/p02-01-kitchen-1200.webp 1200w, images/gallery/p02-01-kitchen-2400.webp 2400w, images/gallery/p02-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Full installation</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
-<div class="project-duo">
+<div class="project-duo project-duo--featured">
 <figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-04-bathroom-2400.webp" data-project="Black Stone Residence" data-room="Bathroom · Vanity and shower" aria-label="Open full-screen view of the bathroom vanity and shower"><span class="project-image-frame project-image-frame--portrait"><img alt="Bathroom with dark vanity, pale stone surfaces and a glass shower" src="images/gallery/p02-04-bathroom-1200.webp" srcset="images/gallery/p02-04-bathroom-1200.webp 1200w, images/gallery/p02-04-bathroom-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Vanity and shower</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
 <figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-06-fireplace-2400.webp" data-project="Black Stone Residence" data-room="Living Room · Fireplace" aria-label="Open full-screen view of the black stone fireplace"><span class="project-image-frame project-image-frame--portrait"><img alt="Living room with a floor-to-ceiling richly figured black stone fireplace" src="images/gallery/p02-06-fireplace-1200.webp" srcset="images/gallery/p02-06-fireplace-1200.webp 1200w, images/gallery/p02-06-fireplace-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Floor-to-ceiling stone</span><span class="project-caption-room">Living Room</span></figcaption></figure>
 </div>
@@ -561,7 +573,7 @@
 <div class="project-copy"><span class="project-scope">Kitchen · Bathroom</span><p class="project-description">A pale, softly veined surface brings quiet contrast to warm cabinetry and a dark island. In the ensuite, the same restrained palette continues through the long vanity and wall finishes.</p></div>
 </header>
 <figure class="project-figure project-hero reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-01-kitchen-3200.webp" data-project="Light Wood Residence" data-room="Kitchen · Waterfall island" aria-label="Open full-screen view of the Light Wood Residence kitchen"><span class="project-image-frame project-image-frame--landscape"><img alt="Light wood kitchen with a dark island wrapped in pale stone" src="images/gallery/p03-01-kitchen-1200.webp" srcset="images/gallery/p03-01-kitchen-1200.webp 1200w, images/gallery/p03-01-kitchen-2400.webp 2400w, images/gallery/p03-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Waterfall island</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
-<div class="project-duo">
+<div class="project-duo project-duo--featured">
 <figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-04-vanity-2400.webp" data-project="Light Wood Residence" data-room="Bathroom · Double vanity" aria-label="Open full-screen view of the bathroom double vanity"><span class="project-image-frame project-image-frame--landscape"><img alt="Bright bathroom with a long double vanity and pale stone counter and wall surfaces" src="images/gallery/p03-04-vanity-1200.webp" srcset="images/gallery/p03-04-vanity-1200.webp 1200w, images/gallery/p03-04-vanity-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Long double vanity</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
 <figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-06-vanity-2400.webp" data-project="Light Wood Residence" data-room="Bathroom · Stone counter" aria-label="Open full-screen detail of the bathroom stone counter"><span class="project-image-frame project-image-frame--landscape"><img alt="Detailed angle across a pale stone double vanity counter" src="images/gallery/p03-06-vanity-1200.webp" srcset="images/gallery/p03-06-vanity-1200.webp 1200w, images/gallery/p03-06-vanity-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Integrated counter</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
 </div>
