@@ -380,6 +380,50 @@
             .founder-testimonial-quote { font-size: 2.7rem; }
         }
 
+        /* Footer - quiet architectural close */
+        .site-footer { background: #0b0b0a; color: #f0eae1; }
+        .site-footer-inner { width: 100%; max-width: 1440px; margin: 0 auto; padding: 6rem 22px 2rem; }
+        .footer-top { display: grid; gap: 4.5rem; padding-bottom: 5rem; }
+        .footer-logo-link { display: inline-block; width: 230px; }
+        .footer-logo-link:focus-visible, .footer-link:focus-visible, .footer-quote-link:focus-visible, .footer-back-link:focus-visible { outline: 1px solid #f0eae1; outline-offset: 6px; }
+        .footer-logo { display: block; width: 100%; height: auto; }
+        .footer-description { max-width: 24rem; margin-top: 2rem; color: rgba(240,234,225,.58); font-size: 1rem; line-height: 1.65; }
+        .footer-invitation { max-width: 34rem; }
+        .footer-eyebrow { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.6rem; color: rgba(240,234,225,.52); font-size: .7rem; font-weight: 600; line-height: 1.3; letter-spacing: .18em; text-transform: uppercase; }
+        .footer-eyebrow::before { content: ''; flex: 0 0 3rem; width: 3rem; height: 1px; background: rgba(240,234,225,.28); }
+        .footer-title { margin: 0; color: #f0eae1; font-family: 'Cormorant Garamond', serif; font-size: 2.45rem; font-weight: 500; line-height: 1.02; letter-spacing: 0; }
+        .footer-title em { font-weight: 650; font-style: italic; }
+        .footer-quote-link { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; margin-top: 1.75rem; border-bottom: 1px solid rgba(240,234,225,.36); color: rgba(240,234,225,.82); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; transition: color .3s ease, border-color .3s ease; }
+        .footer-quote-link .material-symbols-outlined { font-size: 1rem; transition: transform .35s cubic-bezier(.22,.61,.36,1); }
+        .footer-quote-link:hover { border-color: #f0eae1; color: #f0eae1; }
+        .footer-quote-link:hover .material-symbols-outlined { transform: translate(2px,-2px); }
+        .footer-directory { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; padding: 3.5rem 0; border-top: 1px solid rgba(240,234,225,.15); }
+        .footer-directory-heading { margin-bottom: 1.25rem; color: rgba(240,234,225,.5); font-size: .68rem; font-weight: 600; line-height: 1.3; letter-spacing: .18em; text-transform: uppercase; }
+        .footer-list { margin: 0; padding: 0; list-style: none; }
+        .footer-link { display: inline-flex; align-items: center; min-height: 44px; color: rgba(240,234,225,.72); font-size: .9rem; line-height: 1.4; transition: color .3s ease; }
+        .footer-link:hover { color: #f0eae1; }
+        .footer-base { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; padding-top: 1.75rem; border-top: 1px solid rgba(240,234,225,.15); color: rgba(240,234,225,.52); font-size: .65rem; line-height: 1.4; letter-spacing: .12em; text-transform: uppercase; }
+        .footer-back-link { display: inline-flex; align-items: center; min-height: 44px; color: rgba(240,234,225,.58); transition: color .3s ease; }
+        .footer-back-link:hover { color: #f0eae1; }
+
+        @media (min-width: 768px) {
+            .site-footer-inner { padding: 8rem 80px 2.5rem; }
+            .footer-top { grid-template-columns: minmax(0, 1fr) minmax(20rem, .8fr); align-items: end; gap: 5rem; padding-bottom: 6rem; }
+            .footer-logo-link { width: 300px; }
+            .footer-title { font-size: 3rem; }
+            .footer-directory { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 2rem; padding: 4rem 0; }
+            .footer-directory-group:first-child { grid-column: 7 / span 2; }
+            .footer-directory-group:last-child { grid-column: 10 / span 3; }
+            .footer-base { flex-direction: row; align-items: center; justify-content: space-between; padding-top: 2rem; }
+        }
+
+        @media (min-width: 1200px) {
+            .site-footer-inner { padding-top: 10rem; }
+            .footer-logo-link { width: 340px; }
+            .footer-top { padding-bottom: 7rem; }
+            .footer-title { font-size: 3.35rem; }
+        }
+
         /* Adaptive header (transparent over hero, condensed on scroll) */
         #siteHeader { color: #fff; visibility: hidden; border-bottom: 1px solid transparent; transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease; }
         #siteHeader.state-ready { visibility: visible; }
@@ -722,53 +766,41 @@
 </section>
 
 <!-- Final CTA + Footer (dark) -->
-<footer id="contact" class="bg-ink text-on-ink scroll-mt-24">
-<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-24 md:pt-40 pb-14">
-<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-14 pb-24 md:pb-36 reveal">
-<div>
-<span class="eyebrow text-on-ink-muted block mb-8">Start a project</span>
-<h2 class="display text-on-ink">Let's make yours<br/><span class="accent" style="font-size:1.1em">beautiful.</span></h2>
+<footer id="contact" class="site-footer scroll-mt-24">
+<div class="site-footer-inner">
+<div class="footer-top">
+<div class="footer-signature reveal">
+<a class="footer-logo-link" href="#top" aria-label="Eco Stone home"><img class="footer-logo" src="images/eco-stone-white.png?v=20260716-nav" alt="Eco Stone" width="1071" height="260" loading="lazy" decoding="async"/></a>
+<p class="footer-description">Custom stone fabrication and installation. Serving Southern Ontario.</p>
 </div>
-<a href="mailto:info@eco-stone.ca" class="group shrink-0 flex items-center justify-center w-40 h-40 md:w-48 md:h-48 rounded-full border border-white/30 hover:bg-on-ink hover:text-ink transition-colors duration-500 self-start lg:self-auto">
-<span class="flex items-center gap-2 text-[13px] tracking-[0.06em]">Get a quote <span class="material-symbols-outlined text-[17px] transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></span>
-</a>
+<div class="footer-invitation reveal reveal-d1">
+<span class="footer-eyebrow">Start a project</span>
+<h2 class="footer-title">Let's make yours<br/><em>beautiful.</em></h2>
+<a href="mailto:info@eco-stone.ca" class="footer-quote-link">Get a quote <span class="material-symbols-outlined" aria-hidden="true">north_east</span></a>
+</div>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pt-14 border-t border-white/12">
-<div class="md:col-span-5">
-<a class="flex items-center gap-3 mb-6" href="#top" aria-label="Eco Stone home">
-<svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-<path d="M12 2C7 6 5 10 5 14a7 7 0 0 0 14 0c0-4-2-8-7-12Z" stroke="currentColor" stroke-width="1.2"/>
-<path d="M12 4.5C12 9 12 15 12 20.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-</svg>
-<span class="text-[15px] font-medium tracking-[0.24em]">ECO STONE</span>
-</a>
-<p class="lead text-on-ink-muted max-w-xs">Custom stone fabrication and installation. Serving Southern Ontario.</p>
-</div>
-<div class="md:col-span-3 md:col-start-7">
-<h4 class="eyebrow text-on-ink-muted mb-6">Explore</h4>
-<ul class="space-y-3">
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#work">Projects</a></li>
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#services">Services</a></li>
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#process">Process</a></li>
+<div class="footer-directory">
+<nav class="footer-directory-group" aria-label="Footer navigation">
+<h3 class="footer-directory-heading">Explore</h3>
+<ul class="footer-list">
+<li><a class="footer-link" href="#work">Projects</a></li>
+<li><a class="footer-link" href="#services">Services</a></li>
+<li><a class="footer-link" href="#process">Process</a></li>
 </ul>
-</div>
-<div class="md:col-span-3">
-<h4 class="eyebrow text-on-ink-muted mb-6">Contact</h4>
-<ul class="space-y-3">
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="mailto:info@eco-stone.ca">info@eco-stone.ca</a></li>
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="tel:+19056167157">905&nbsp;616&nbsp;7157</a></li>
-<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#top">Back to top ↑</a></li>
+</nav>
+<div class="footer-directory-group">
+<h3 class="footer-directory-heading">Contact</h3>
+<ul class="footer-list">
+<li><a class="footer-link" href="mailto:info@eco-stone.ca">info@eco-stone.ca</a></li>
+<li><a class="footer-link" href="tel:+19056167157">905&nbsp;616&nbsp;7157</a></li>
 </ul>
 </div>
 </div>
 
-<div class="mt-16 pt-8 border-t border-white/12 flex flex-col md:flex-row justify-between items-center gap-4">
-<span class="text-[11px] tracking-[0.12em] text-on-ink-muted uppercase">© 2026 Eco Stone. All rights reserved.</span>
-<div class="flex gap-8">
-<a class="text-[11px] tracking-[0.12em] text-on-ink-muted hover:text-on-ink transition-colors uppercase" href="#">Privacy</a>
-<a class="text-[11px] tracking-[0.12em] text-on-ink-muted hover:text-on-ink transition-colors uppercase" href="#">Terms</a>
-</div>
+<div class="footer-base">
+<span>© 2026 Eco Stone. All rights reserved.</span>
+<a class="footer-back-link" href="#top">Back to top ↑</a>
 </div>
 </div>
 </footer>
