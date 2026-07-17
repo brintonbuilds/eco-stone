@@ -64,12 +64,19 @@
         .trust-editorial-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.25rem, 4.4vw, 4.1rem); font-weight: 500; line-height: .91; letter-spacing: -0.018em; text-rendering: optimizeLegibility; }
         .trust-editorial-title em { font-style: italic; font-weight: 600; letter-spacing: -0.025em; }
         .trust-editorial-title-keep { display: inline-block; }
+        .trust-editorial-title-break { display: none; }
         .trust-editorial-body { color: rgba(26,24,21,.70); font-size: 1.0625rem; line-height: 1.68; }
         .trust-spec { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #d8cfc0; }
         .trust-spec-item { min-width: 0; padding-top: 1.15rem; }
         .trust-spec-item + .trust-spec-item { border-left: 1px solid #d8cfc0; margin-left: .75rem; padding-left: .75rem; }
         .trust-spec-label { color: #1a1815; font-size: 1rem; font-weight: 500; line-height: 1.25; }
         .trust-spec-detail { color: #756e62; font-size: .7rem; line-height: 1.45; letter-spacing: .06em; margin-top: .45rem; }
+        .trust-spec-link { color: inherit; text-decoration: none; }
+        .trust-spec-link .trust-spec-label { text-decoration: underline; text-decoration-color: rgba(26,24,21,.24); text-decoration-thickness: 1px; text-underline-offset: .22em; transition: color .22s ease, text-decoration-color .22s ease; }
+        .trust-spec-link:hover .trust-spec-label { color: #5d5549; text-decoration-color: rgba(26,24,21,.62); }
+        .trust-spec-link:focus-visible, .trust-review-link:focus-visible { outline: 1px solid rgba(26,24,21,.62); outline-offset: 5px; }
+        .trust-review-arrow { display: inline-block; transition: transform .25s cubic-bezier(.22,.61,.36,1); }
+        .trust-review-link:hover .trust-review-arrow { transform: translate(2px,-2px); }
         .trust-editorial-image { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
         .trust-editorial-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 68%; }
 
@@ -85,6 +92,10 @@
             .trust-editorial-title-keep { white-space: nowrap; }
             .trust-editorial-copy { padding: 8rem 80px 7rem; }
             .trust-editorial-image { aspect-ratio: auto; height: clamp(34rem, 78vw, 43rem); }
+        }
+
+        @media (min-width: 640px) {
+            .trust-editorial-title-break { display: block; }
         }
 
         @media (min-width: 1024px) {
@@ -251,6 +262,8 @@
         @media (prefers-reduced-motion: reduce) {
             .project-image-frame img, .project-expanded, .project-expand-icon, .gallery-lightbox, .gallery-lightbox-control { transition: none; }
             .project-image-button:hover img { transform: none; }
+            .trust-review-arrow, .trust-spec-link .trust-spec-label { transition: none; }
+            .trust-review-link:hover .trust-review-arrow { transform: none; }
         }
 
         /* Process - engineered dark sequence */
@@ -476,18 +489,17 @@
 <div class="trust-editorial-grid">
 <div class="trust-editorial-copy">
 <div class="trust-editorial-inner reveal">
-<span class="eyebrow text-muted flex items-center mb-8"><span class="rule" style="opacity:.4"></span>Trusted across Southern Ontario</span>
-<h2 class="trust-editorial-title text-ink mb-9">Trusted by<br/>homeowners<br/><span class="trust-editorial-title-keep">and <em>custom builders.</em></span></h2>
+<span class="eyebrow text-muted flex items-center mb-8"><span class="rule" style="opacity:.4"></span>Trusted across Burlington &amp; the GTA</span>
+<h2 class="trust-editorial-title text-ink mb-9">Trusted by<span class="trust-editorial-title-break" aria-hidden="true"></span> homeowners<span class="trust-editorial-title-break" aria-hidden="true"></span> <span class="trust-editorial-title-keep">and <em>custom builders.</em></span></h2>
 <div class="trust-editorial-body max-w-lg mb-10">
-<p class="mb-4">Precise templating, meticulous fabrication and clean, considered installations — delivered on schedule, without compromise.</p>
-<p>It is the attention to detail you notice first, and the reliability you remember. Every edge, seam and surface is finished to last a lifetime.</p>
+<p>For more than a decade, Dom and the Eco Stone team have built their reputation one precise installation at a time—through careful craftsmanship, clear communication and work they stand behind.</p>
 </div>
-<div class="trust-spec mb-9" aria-label="Eco Stone service standards">
-<div class="trust-spec-item"><div class="trust-spec-label">One team</div><div class="trust-spec-detail">Template to install</div></div>
-<div class="trust-spec-item"><div class="trust-spec-label">On schedule</div><div class="trust-spec-detail">Clean, tidy installs</div></div>
-<div class="trust-spec-item"><div class="trust-spec-label">Built to last</div><div class="trust-spec-detail">Sealed &amp; finished</div></div>
+<div class="trust-spec mb-9" aria-label="Eco Stone reputation indicators">
+<div class="trust-spec-item"><div class="trust-spec-label">Over a decade</div><div class="trust-spec-detail">Serving Burlington and the GTA</div></div>
+<a class="trust-spec-item trust-spec-link" href="https://www.google.com/maps?cid=13842502506287809061" target="_blank" rel="noopener noreferrer" aria-label="Read Eco Stone's 21 five-star Google reviews (opens in a new tab)"><div class="trust-spec-label">21 five-star reviews</div><div class="trust-spec-detail">From Google customers</div></a>
+<div class="trust-spec-item"><div class="trust-spec-label">One dedicated team</div><div class="trust-spec-detail">From template to installation</div></div>
 </div>
-<a href="#work" class="group inline-flex items-center gap-3 text-[12px] font-medium tracking-[0.12em] uppercase text-ink link-underline pb-1">View selected work <span class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+<a href="https://www.google.com/maps?cid=13842502506287809061" target="_blank" rel="noopener noreferrer" class="trust-review-link inline-flex items-center gap-3 text-[12px] font-medium tracking-[0.12em] uppercase text-ink link-underline pb-1">Read our Google reviews <span class="trust-review-arrow" aria-hidden="true">&#8599;</span></a>
 </div>
 </div>
 <figure class="trust-editorial-image m-0">
