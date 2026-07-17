@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eco Stone — Custom Stone Fabrication &amp; Installation</title>
+<meta name="description" content="Custom stone fabrication and installation for kitchens, bathrooms and exceptional homes across Southern Ontario. Trusted by homeowners and custom builders."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="preload" as="image" href="images/eco-stone-white.png?v=20260716-nav"/>
+<link rel="preload" as="image" href="images/eco-stone-dark.png?v=20260716-nav"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            "colors": {
+                    "paper": "#f0eae1",
+                    "sand": "#e6ded0",
+                    "ink": "#1a1815",
+                    "ink-soft": "#232019",
+                    "muted": "#756e62",
+                    "on-ink": "#f0eae1",
+                    "on-ink-muted": "#a79e90",
+                    "line": "#d8cfc0"
+            },
+            "spacing": {
+                    "max-width": "1320px",
+                    "margin-mobile": "22px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "sans": ["Inter", "sans-serif"],
+                    "serif": ["Cormorant Garamond", "serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        html { overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+        body { font-feature-settings: "cv11", "ss01"; }
+        h1, h2, h3, h4 { font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: -0.024em; }
+        .display { font-size: clamp(2.5rem, 6.2vw, 5.4rem); line-height: 1.0; letter-spacing: -0.03em; }
+        .display-sm { font-size: clamp(2.1rem, 4.4vw, 3.7rem); line-height: 1.03; letter-spacing: -0.028em; }
+        .accent { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; letter-spacing: -0.005em; }
+        .eyebrow { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; }
+        .lead { font-weight: 400; line-height: 1.62; }
+
+        /* Hero — elegant serif statement */
+        .hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(3.6rem, 9vw, 8rem); line-height: 0.9; letter-spacing: -0.01em; text-rendering: optimizeLegibility; }
+        .hero-title em { display: inline-block; font-style: italic; font-weight: 600; font-size: 1.12em; line-height: 0.82; letter-spacing: -0.03em; margin-top: -0.04em; }
+        .hero-eyebrow { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; }
+        .rule { display: inline-block; width: 42px; height: 1px; background: currentColor; vertical-align: middle; margin-right: 16px; opacity: .55; }
+
+        /* Trust section - full-bleed architectural split */
+        .trust-editorial { overflow: hidden; }
+        .trust-editorial-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+        .trust-editorial-copy { padding: 6rem 22px 5rem; }
+        .trust-editorial-inner { width: 100%; max-width: 35rem; }
+        .trust-editorial-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.25rem, 4.4vw, 4.1rem); font-weight: 500; line-height: .91; letter-spacing: -0.018em; text-rendering: optimizeLegibility; }
+        .trust-editorial-title em { font-style: italic; font-weight: 600; letter-spacing: -0.025em; }
+        .trust-editorial-title-keep { display: inline-block; }
+        .trust-editorial-body { color: rgba(26,24,21,.70); font-size: 1.0625rem; line-height: 1.68; }
+        .trust-spec { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #d8cfc0; }
+        .trust-spec-item { min-width: 0; padding-top: 1.15rem; }
+        .trust-spec-item + .trust-spec-item { border-left: 1px solid #d8cfc0; margin-left: .75rem; padding-left: .75rem; }
+        .trust-spec-label { color: #1a1815; font-size: 1rem; font-weight: 500; line-height: 1.25; }
+        .trust-spec-detail { color: #756e62; font-size: .7rem; line-height: 1.45; letter-spacing: .06em; margin-top: .45rem; }
+        .trust-editorial-image { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
+        .trust-editorial-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 68%; }
+
+        @media (max-width: 639px) {
+            .trust-editorial-title { font-size: 2.9rem; }
+            .trust-spec { grid-template-columns: minmax(0, 1fr); border-top: 0; }
+            .trust-spec-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 1.5rem; border-top: 1px solid #d8cfc0; padding: 1.1rem 0; }
+            .trust-spec-item + .trust-spec-item { border-left: 0; margin-left: 0; padding-left: 0; }
+            .trust-spec-detail { margin-top: 0; text-align: right; }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .trust-editorial-title-keep { white-space: nowrap; }
+            .trust-editorial-copy { padding: 8rem 80px 7rem; }
+            .trust-editorial-image { aspect-ratio: auto; height: clamp(34rem, 78vw, 43rem); }
+        }
+
+        @media (min-width: 1024px) {
+            .trust-editorial-title-keep { white-space: nowrap; }
+            .trust-editorial-grid { grid-template-columns: minmax(520px, 46vw) minmax(0, 1fr); min-height: clamp(800px, 82vh, 900px); }
+            .trust-editorial-copy { display: flex; align-items: center; padding: 7rem clamp(3rem, 4.5vw, 5.5rem) 4rem max(80px, calc((100vw - 1320px) / 2 + 80px)); }
+            .trust-editorial-image { height: 100%; min-height: clamp(800px, 82vh, 900px); aspect-ratio: auto; }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            .trust-editorial-image img { transform: scale(1.15); transform-origin: 50% 72%; }
+        }
+
+        /* Selected Work - monumental dark feature */
+        .selected-work { background: #0b0b0a; color: #f0eae1; overflow: hidden; }
+        .selected-work-intro { width: 100%; max-width: 1600px; min-height: 100svh; margin: 0 auto; padding: 7rem 22px 5rem; display: grid; grid-template-rows: auto 1fr auto; }
+        .selected-work-title { align-self: center; font-family: 'Inter', sans-serif; font-size: 2.75rem; font-weight: 500; line-height: .86; letter-spacing: 0; }
+        .selected-work-title span { display: block; white-space: nowrap; }
+        .selected-work-summary { justify-self: start; max-width: 23rem; color: #aaa49a; font-size: 1.0625rem; line-height: 1.65; }
+        html.work-scroll-reveal-ready .selected-work-scroll-eyebrow,
+        html.work-scroll-reveal-ready .selected-work-scroll-line,
+        html.work-scroll-reveal-ready .selected-work-scroll-summary { will-change: opacity, transform; }
+        .selected-work-gallery { width: 100%; padding: 0 0 8rem; }
+        .project-chapter { scroll-margin-top: 5rem; }
+        .project-chapter + .project-chapter { margin-top: 10rem; }
+        .project-header { width: calc(100% - 44px); max-width: 1280px; margin: 0 auto; padding: 3rem 0; border-top: 1px solid rgba(240,234,225,.2); }
+        .project-number, .project-scope, .project-caption-room { color: #938d84; font-size: .7rem; line-height: 1.4; letter-spacing: .14em; text-transform: uppercase; }
+        .project-title { margin-top: 1.25rem; color: #f0eae1; font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 500; line-height: .92; letter-spacing: 0; }
+        .project-scope { display: block; margin-bottom: 1.25rem; }
+        .project-description { max-width: 34rem; color: #aaa49a; font-size: 1rem; line-height: 1.7; }
+        .project-hero { width: calc(100% - 44px); margin: 1.5rem auto 0; }
+        .project-duo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 5rem; width: calc(100% - 44px); margin: 6rem auto 0; }
+        .project-wide { width: calc(100% - 44px); margin: 6rem auto 0; }
+        .project-figure { min-width: 0; margin: 0; }
+        .project-image-button { display: block; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; cursor: zoom-in; }
+        .project-image-frame { position: relative; display: block; overflow: hidden; background: #141412; }
+        .project-image-frame--landscape { aspect-ratio: 3 / 2; }
+        .project-image-frame--portrait { aspect-ratio: 2 / 3; }
+        .project-image-frame img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.001); transition: transform .8s cubic-bezier(.2,.7,.2,1), opacity .35s ease; }
+        .project-image-button:hover img { transform: scale(1.018); }
+        .project-image-button:focus-visible { outline: 1px solid #f0eae1; outline-offset: 5px; }
+        .project-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; margin-top: .9rem; color: #f0eae1; font-size: .9rem; line-height: 1.45; }
+        .project-expand-control, .project-collapse-control { width: calc(100% - 44px); max-width: 1280px; margin: 5.5rem auto 0; border-top: 1px solid rgba(240,234,225,.22); }
+        .project-expand-toggle, .project-collapse-bottom { display: flex; align-items: center; justify-content: space-between; gap: 2rem; width: 100%; min-height: 5.9rem; padding: 0; border: 0; background: transparent; color: #f0eae1; text-align: left; cursor: pointer; }
+        .project-expand-toggle:hover, .project-collapse-bottom:hover { color: #fffaf0; }
+        .project-expand-toggle:focus-visible, .project-collapse-bottom:focus-visible { outline: 1px solid #f0eae1; outline-offset: 6px; }
+        .project-expand-text { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem .8rem; min-width: 0; }
+        .project-expand-primary { font-size: .96rem; line-height: 1.45; }
+        .project-expand-separator { color: #706a61; }
+        .project-expand-meta { color: #938d84; font-size: .68rem; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
+        .project-expand-icon { flex: 0 0 auto; color: #938d84; font-size: 1.4rem; line-height: 1; transition: color .22s ease, transform .22s cubic-bezier(.22,.61,.36,1); }
+        .project-expand-toggle:hover .project-expand-icon, .project-expand-toggle:focus-visible .project-expand-icon { color: #f0eae1; transform: translateX(3px); }
+        .project-collapse-bottom:hover .project-expand-icon, .project-collapse-bottom:focus-visible .project-expand-icon { color: #f0eae1; transform: translateY(-2px); }
+        .project-expanded { height: 0; overflow: hidden; opacity: 0; transform: translateY(18px); transition: height .42s cubic-bezier(.22,.61,.36,1), opacity .28s ease, transform .42s cubic-bezier(.22,.61,.36,1); }
+        .project-expanded[hidden] { display: none; }
+        .project-expanded.is-open { opacity: 1; transform: translateY(0); }
+        .project-expanded-inner { padding-top: 5.5rem; }
+        .project-room-group + .project-room-group { margin-top: 8rem; }
+        .project-room-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; width: calc(100% - 44px); max-width: 1280px; margin: 0 auto 3rem; padding-top: 1.1rem; border-top: 1px solid rgba(240,234,225,.18); }
+        .project-room-title { color: #f0eae1; font-size: .76rem; font-weight: 500; line-height: 1.4; letter-spacing: .16em; text-transform: uppercase; }
+        .project-room-note { color: #938d84; font-size: .72rem; line-height: 1.5; text-align: right; }
+        .project-room-group > .project-duo, .project-room-group > .project-wide { margin-top: 0; }
+        .project-collapse-control { margin-top: 8rem; }
+
+        .gallery-lightbox { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-rows: auto minmax(0, 1fr); background: rgba(7,7,6,.98); color: #f0eae1; opacity: 0; visibility: hidden; transition: opacity .22s ease, visibility .22s ease; }
+        .gallery-lightbox.is-open { opacity: 1; visibility: visible; }
+        .gallery-lightbox[hidden] { display: none; }
+        .gallery-lightbox-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; min-height: 76px; padding: 1rem 22px; border-bottom: 1px solid rgba(240,234,225,.14); }
+        .gallery-lightbox-meta { min-width: 0; }
+        .gallery-lightbox-project { overflow: hidden; color: #f0eae1; font-size: .82rem; line-height: 1.3; text-overflow: ellipsis; white-space: nowrap; }
+        .gallery-lightbox-detail { margin-top: .35rem; color: #938d84; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+        .gallery-lightbox-count { margin-right: 3.5rem; color: #aaa49a; font-size: .75rem; font-variant-numeric: tabular-nums; }
+        .gallery-lightbox-stage { position: relative; display: grid; place-items: center; min-height: 0; padding: 1.25rem 22px 5.5rem; }
+        .gallery-lightbox-image { display: block; max-width: 100%; max-height: calc(100dvh - 170px); object-fit: contain; }
+        .gallery-lightbox-control { position: absolute; display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid rgba(240,234,225,.24); border-radius: 50%; background: rgba(11,11,10,.72); color: #f0eae1; transition: background-color .2s ease, border-color .2s ease; }
+        .gallery-lightbox-control:hover { border-color: rgba(240,234,225,.55); background: rgba(35,32,25,.92); }
+        .gallery-lightbox-control:focus-visible { outline: 2px solid #f0eae1; outline-offset: 3px; }
+        .gallery-lightbox-close { top: 14px; right: 22px; }
+        .gallery-lightbox-prev { bottom: 18px; left: calc(50% - 58px); }
+        .gallery-lightbox-next { right: calc(50% - 58px); bottom: 18px; }
+        body.gallery-viewer-open { overflow: hidden; }
+
+        @media (min-width: 480px) {
+            .selected-work-title { font-size: 3.5rem; }
+        }
+
+        @media (min-width: 640px) {
+            .selected-work-title { font-size: 5rem; }
+            .project-title { font-size: 3.75rem; }
+        }
+
+        @media (min-width: 768px) {
+            .selected-work-intro { padding: 10rem 80px 7rem; }
+            .selected-work-title { font-size: 5rem; }
+            .selected-work-summary { justify-self: end; }
+            .selected-work-gallery { padding-bottom: 10rem; }
+            .project-chapter + .project-chapter { margin-top: 14rem; }
+            .project-header { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 2rem; width: calc(100% - 160px); padding: 4rem 0; }
+            .project-heading { grid-column: 1 / span 5; }
+            .project-copy { grid-column: 7 / span 6; padding-top: .2rem; }
+            .project-title { font-size: 4.2rem; }
+            .project-hero { width: calc(100% - 160px); margin-top: 2rem; }
+            .project-duo { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 2rem; width: calc(100% - 160px); max-width: 1320px; margin-top: 10rem; }
+            .project-duo .project-figure:first-child { grid-column: 1 / span 5; }
+            .project-duo .project-figure:last-child { grid-column: 7 / span 6; margin-top: 8rem; }
+            .project-duo--reverse .project-figure:first-child { grid-column: 7 / span 6; }
+            .project-duo--reverse .project-figure:last-child { grid-column: 1 / span 5; grid-row: 1; margin-top: 9rem; }
+            .project-wide { width: calc(100% - 160px); max-width: 1180px; margin-top: 11rem; }
+            .project-wide--portrait { max-width: 840px; }
+            .project-wide--right { margin-right: 80px; }
+            .project-wide--left { margin-left: 80px; }
+            .project-expand-control, .project-room-heading, .project-collapse-control { width: calc(100% - 160px); }
+            .gallery-lightbox-header { padding-right: 80px; padding-left: 80px; }
+            .gallery-lightbox-close { right: 22px; }
+            .gallery-lightbox-stage { padding: 1.75rem 80px; }
+            .gallery-lightbox-prev { top: 50%; bottom: auto; left: 22px; transform: translateY(-50%); }
+            .gallery-lightbox-next { top: 50%; right: 22px; bottom: auto; transform: translateY(-50%); }
+        }
+
+        @media (min-width: 1024px) {
+            .selected-work-title { font-size: 7rem; }
+            .project-hero { width: 88vw; max-width: 1760px; }
+            .project-title { font-size: 4.8rem; }
+        }
+
+        @media (min-width: 1280px) {
+            .selected-work-title { font-size: 8.6rem; }
+        }
+
+        @media (min-width: 1400px) {
+            .selected-work-title { font-size: 9.5rem; }
+        }
+
+        @media (min-width: 1536px) {
+            .selected-work-title { font-size: 10.75rem; }
+            .project-header, .project-duo, .project-expand-control, .project-room-heading, .project-collapse-control { max-width: 1440px; }
+            .project-wide { max-width: 1320px; }
+        }
+
+        @media (max-width: 767px) {
+            .project-expand-control { margin-top: 4.5rem; }
+            .project-expand-toggle, .project-collapse-bottom { min-height: 5.4rem; align-items: center; }
+            .project-expand-text { display: grid; gap: .35rem; }
+            .project-expand-separator { display: none; }
+            .project-expanded-inner { padding-top: 4.25rem; }
+            .project-room-heading { display: block; margin-bottom: 2.25rem; }
+            .project-room-note { margin-top: .55rem; text-align: left; }
+            .project-room-group + .project-room-group { margin-top: 5.75rem; }
+            .project-collapse-control { margin-top: 5.75rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .project-image-frame img, .project-expanded, .project-expand-icon, .gallery-lightbox, .gallery-lightbox-control { transition: none; }
+            .project-image-button:hover img { transform: none; }
+        }
+
+        /* Process - engineered dark sequence */
+        .process-feature { background: #0b0b0a; color: #f0eae1; overflow: hidden; }
+        .process-feature-inner { width: 100%; max-width: 1320px; margin: 0 auto; padding: 7rem 22px; }
+        .process-feature-header { display: block; }
+        .process-feature-eyebrow { color: #938d84; }
+        .process-feature-title { margin-top: 2.75rem; color: #f0eae1; font-family: 'Inter', sans-serif; font-size: 2.5rem; font-weight: 500; line-height: .96; letter-spacing: 0; }
+        .process-break-mobile, .process-break-narrow { display: block; }
+        .process-sequence { display: grid; grid-template-columns: minmax(0, 1fr); margin-top: 6rem; }
+        .process-step { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 1.25rem; padding: 2rem 0 2.25rem; border-top: 1px solid rgba(240,234,225,.2); }
+        .process-step-number { color: #938d84; font-size: .75rem; line-height: 1.4; letter-spacing: .1em; padding-top: .35rem; }
+        .process-step-title { color: #f0eae1; font-family: 'Inter', sans-serif; font-size: 1.75rem; font-weight: 500; line-height: 1.1; letter-spacing: 0; }
+        .process-step-description { max-width: 21rem; margin-top: 1rem; color: #aaa49a; font-size: 1rem; line-height: 1.65; }
+
+        @media (min-width: 640px) {
+            .process-feature-title { font-size: 3.6rem; }
+            .process-break-mobile { display: none; }
+        }
+
+        @media (min-width: 768px) {
+            .process-feature-inner { padding: 9rem 80px 10rem; }
+            .process-sequence { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 8rem; border-top: 1px solid rgba(240,234,225,.2); }
+            .process-step { display: block; padding: 2rem 2.5rem 0 0; border-top: 0; }
+            .process-step + .process-step { padding-left: 2.5rem; }
+            .process-step-title { margin-top: 1.75rem; font-size: 1.9rem; }
+            .process-step-description { margin-top: 1.25rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .process-feature-title { font-size: 4rem; }
+        }
+
+        @media (min-width: 1280px) {
+            .process-feature-title { font-size: 4.75rem; }
+            .process-break-narrow { display: none; }
+        }
+
+        /* Founder - full-bleed editorial profile */
+        .founder-feature { background: #e6ded0; }
+        .founder-layout { display: grid; min-width: 0; }
+        .founder-media { height: min(78svh, 680px); min-height: 540px; overflow: hidden; background: #171715; }
+        .founder-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 43%; }
+        .founder-image.reveal { transform: scale(1.015); transition-duration: 1.2s; }
+        .founder-image.reveal.in { transform: scale(1); }
+        .founder-content { display: flex; align-items: center; padding: 6.5rem 22px 7rem; background: #e6ded0; }
+        .founder-content-inner { width: 100%; max-width: 650px; }
+        .founder-eyebrow { margin-bottom: 2.5rem; }
+        .founder-quote { margin: 0 0 2.5rem; color: #1a1815; font-family: 'Cormorant Garamond', serif; font-size: 2.35rem; font-weight: 500; font-style: normal; line-height: 1.04; letter-spacing: 0; }
+        .founder-quote-line { display: block; }
+        .founder-story { max-width: 33rem; margin-bottom: 2.75rem; color: #756e62; font-size: 1.0625rem; line-height: 1.7; }
+        .founder-signature { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 1.1rem; align-items: center; }
+        .founder-signature-rule { width: 100%; height: 1px; background: rgba(26,24,21,.32); }
+        .founder-name { color: #1a1815; font-size: .8rem; font-weight: 600; line-height: 1.2; letter-spacing: .14em; text-transform: uppercase; }
+        .founder-role { margin-top: .35rem; color: #756e62; font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; line-height: 1.2; }
+
+        @media (min-width: 768px) {
+            .founder-media { height: 760px; }
+            .founder-content { padding: 8rem 80px 9rem; }
+            .founder-quote { font-size: 3.15rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .founder-layout { grid-template-columns: minmax(0, 46%) minmax(0, 54%); min-height: 900px; }
+            .founder-media { height: auto; min-height: 100%; }
+            .founder-media img { object-position: 50% 42%; }
+            .founder-content { padding: 7rem 4rem; }
+            .founder-eyebrow { margin-bottom: 3.25rem; }
+            .founder-quote { margin-bottom: 3rem; font-size: 2.75rem; }
+            .founder-story { margin-bottom: 3.25rem; }
+        }
+
+        @media (min-width: 1200px) {
+            .founder-content { padding: 8rem max(80px, calc((100vw - 1320px) / 2 + 80px)) 8rem 5rem; }
+            .founder-quote { font-size: 3.2rem; }
+        }
+
+        @media (min-width: 1280px) {
+            .founder-content { padding-left: 5.5rem; }
+            .founder-quote { font-size: 3.4rem; }
+        }
+
+        @media (min-width: 1440px) {
+            .founder-layout { min-height: 1000px; }
+            .founder-content { padding-left: 6.5rem; }
+            .founder-quote { font-size: 3.7rem; }
+        }
+
+        /* Adaptive header (transparent over hero, condensed on scroll) */
+        #siteHeader { color: #fff; visibility: hidden; border-bottom: 1px solid transparent; transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease; }
+        #siteHeader.state-ready { visibility: visible; }
+        #siteHeader.scrolled { background: rgba(255,255,255,.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: #1a1815; border-bottom-color: rgba(26,24,21,.12); box-shadow: 0 8px 28px rgba(11,11,10,.06); }
+        .site-header-inner { height: 80px; transition: height .45s cubic-bezier(.22,.61,.36,1); }
+        #siteHeader.scrolled .site-header-inner { height: 68px; }
+        .site-header-primary { gap: 3rem; transition: gap .45s cubic-bezier(.22,.61,.36,1); }
+        .site-header-nav { gap: 2.5rem; transition: gap .45s cubic-bezier(.22,.61,.36,1); }
+        .site-header-actions { gap: 1.5rem; transition: gap .45s cubic-bezier(.22,.61,.36,1); }
+        #siteHeader.scrolled .site-header-actions { gap: 1.25rem; }
+        .site-logo-lockup { position: relative; display: block; width: 166px; aspect-ratio: 1071 / 260; flex: 0 0 auto; transform-origin: left center; transition: transform .45s cubic-bezier(.22,.61,.36,1); }
+        #siteHeader.scrolled .site-logo-lockup { transform: scale(.9); }
+        .site-logo-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; object-position: left center; transition: opacity .28s ease; }
+        .site-logo-image--white { opacity: 1; }
+        .site-logo-image--dark { opacity: 0; }
+        #siteHeader.scrolled .site-logo-image--white { opacity: 0; }
+        #siteHeader.scrolled .site-logo-image--dark { opacity: 1; }
+        #siteHeader .navlink { color: inherit; opacity: .68; transition: opacity .3s; }
+        #siteHeader .navlink:hover { opacity: 1; }
+        #siteHeader .pill { border: 1px solid currentColor; opacity: .9; transition: opacity .3s, background-color .3s; }
+        #siteHeader .pill:hover { opacity: 1; }
+
+        @media (min-width: 768px) {
+            .site-header-inner { height: 96px; }
+            #siteHeader.scrolled .site-header-inner { height: 78px; }
+            .site-logo-lockup { width: 196px; }
+        }
+
+        @media (min-width: 1024px) {
+            .site-header-primary { gap: 5rem; }
+            #siteHeader.scrolled .site-header-primary { gap: 4rem; }
+            #siteHeader.scrolled .site-header-nav { gap: 2.125rem; }
+        }
+
+        .link-underline { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .5s cubic-bezier(.22,.61,.36,1); padding-bottom: 3px; }
+        .link-underline:hover { background-size: 100% 1px; }
+        .work-img { transition: transform 1.5s cubic-bezier(.22,.61,.36,1); }
+        .group:hover .work-img { transform: scale(1.04); }
+        .row-link { transition: color .3s; }
+        .row-link .material-symbols-outlined { transition: transform .4s cubic-bezier(.22,.61,.36,1); }
+        .row-link:hover .material-symbols-outlined { transform: translate(3px,-3px); }
+
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 1s cubic-bezier(.22,.61,.36,1), transform 1s cubic-bezier(.22,.61,.36,1); }
+        .reveal.in { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: .09s; } .reveal-d2 { transition-delay: .18s; } .reveal-d3 { transition-delay: .27s; }
+        .hero-media { animation: heroIn 1.7s cubic-bezier(.22,.61,.36,1) both; }
+        @keyframes heroIn { from { transform: scale(1.06); opacity: .35; } to { transform: scale(1); opacity: 1; } }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            #siteHeader, .site-header-inner, .site-header-primary, .site-header-nav, .site-header-actions, .site-logo-lockup, .site-logo-image { transition: none !important; }
+            .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+            .hero-media { animation: none !important; }
+            .work-img { transition: none !important; }
+            .selected-work-scroll-eyebrow,
+            .selected-work-scroll-line,
+            .selected-work-scroll-summary { opacity: 1 !important; transform: none !important; will-change: auto !important; }
+        }
+    </style>
+    <noscript><style>#siteHeader { visibility: visible; }</style></noscript>
+</head>
+<body class="bg-paper text-ink font-sans antialiased overflow-x-hidden">
+
+<!-- Header -->
+<header id="siteHeader" class="fixed top-0 w-full z-50">
+<div class="site-header-inner flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="site-header-primary flex items-center">
+<a class="site-logo-lockup" href="#top" aria-label="Eco Stone home">
+<img class="site-logo-image site-logo-image--white" src="images/eco-stone-white.png?v=20260716-nav" alt="" width="1071" height="260" decoding="async"/>
+<img class="site-logo-image site-logo-image--dark" src="images/eco-stone-dark.png?v=20260716-nav" alt="" width="1071" height="260" decoding="async"/>
+</a>
+<nav class="site-header-nav hidden lg:flex items-center" aria-label="Primary">
+<a class="navlink text-[13px] tracking-[0.02em]" href="#work">Projects</a>
+<a class="navlink text-[13px] tracking-[0.02em]" href="#services">Services</a>
+<a class="navlink text-[13px] tracking-[0.02em]" href="#process">Process</a>
+<a class="navlink text-[13px] tracking-[0.02em]" href="#contact">Contact</a>
+</nav>
+</div>
+<div class="site-header-actions flex items-center">
+<a href="#contact" class="pill hidden sm:inline-flex items-center gap-2 text-[12px] tracking-[0.08em] px-6 py-2.5 rounded-full">
+                Start a project <span class="material-symbols-outlined text-[15px]">north_east</span>
+</a>
+<button id="menuBtn" class="material-symbols-outlined lg:hidden" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">menu</button>
+</div>
+</div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="fixed inset-0 z-[60] bg-paper text-ink hidden flex-col lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="flex justify-between items-center h-20 px-margin-mobile border-b border-line">
+<img class="w-[166px] h-auto" src="images/eco-stone-dark.png?v=20260716-nav" alt="Eco Stone" width="1071" height="260" decoding="async"/>
+<button id="menuClose" class="material-symbols-outlined" aria-label="Close menu">close</button>
+</div>
+<nav class="flex flex-col px-margin-mobile pt-8 gap-1" aria-label="Mobile">
+<a class="display-sm py-3 border-b border-line" href="#work" data-close>Projects</a>
+<a class="display-sm py-3 border-b border-line" href="#services" data-close>Services</a>
+<a class="display-sm py-3 border-b border-line" href="#process" data-close>Process</a>
+<a class="display-sm py-3 border-b border-line" href="#contact" data-close>Contact</a>
+<a href="#contact" data-close class="mt-8 inline-flex items-center justify-center gap-2 bg-ink text-paper px-8 py-4 rounded-full text-[12px] tracking-[0.1em] uppercase">
+                Start a project <span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</nav>
+</div>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="relative min-h-screen flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<video id="heroVideo" class="hero-media w-full h-full object-cover object-center" muted loop playsinline preload="none" poster="images/hero-poster.jpg?v=20260716-crisp" aria-label="Eco Stone project work — kitchens, bathrooms and custom stone installations">
+<source data-motion-src="images/hero-mobile.mp4?v=20260716-crisp" type="video/mp4" media="(max-width: 1023px)"/>
+<source data-motion-src="images/hero.mp4?v=20260716-crisp" type="video/mp4"/>
+</video>
+<div class="absolute inset-0" style="background:linear-gradient(to top, rgba(16,17,14,.90) 0%, rgba(16,17,14,.72) 22%, rgba(16,17,14,.42) 44%, rgba(16,17,14,.14) 64%, rgba(16,17,14,.10) 82%, rgba(16,17,14,.34) 100%);"></div>
+</div>
+<div class="relative z-10 w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pb-20 md:pb-24">
+<div class="max-w-4xl">
+<span class="reveal hero-eyebrow text-white/80 flex items-center mb-8"><span class="rule"></span>Custom Stone Surfaces · Southern Ontario</span>
+<h1 class="reveal reveal-d1 hero-title text-white mb-9">Making simple,<br/><em>beautiful.</em></h1>
+<p class="reveal reveal-d2 lead text-white/85 text-lg md:text-xl max-w-md mb-11">Thoughtfully fabricated stone for kitchens, bathrooms and spaces made to last.</p>
+<div class="reveal reveal-d3 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-7">
+<a href="#contact" class="inline-flex items-center justify-center gap-2 bg-paper text-ink px-8 py-4 rounded-full text-[12px] tracking-[0.1em] uppercase hover:bg-white transition-colors duration-300">
+                    Request a Quote <span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a href="#work" class="group inline-flex items-center justify-center sm:justify-start gap-2 text-white text-[12px] tracking-[0.1em] uppercase">
+<span class="link-underline">Explore our work</span> <span class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trust / Editorial statement -->
+<section class="trust-editorial bg-sand">
+<div class="trust-editorial-grid">
+<div class="trust-editorial-copy">
+<div class="trust-editorial-inner reveal">
+<span class="eyebrow text-muted flex items-center mb-8"><span class="rule" style="opacity:.4"></span>Trusted across Southern Ontario</span>
+<h2 class="trust-editorial-title text-ink mb-9">Trusted by<br/>homeowners<br/><span class="trust-editorial-title-keep">and <em>custom builders.</em></span></h2>
+<div class="trust-editorial-body max-w-lg mb-10">
+<p class="mb-4">Precise templating, meticulous fabrication and clean, considered installations — delivered on schedule, without compromise.</p>
+<p>It is the attention to detail you notice first, and the reliability you remember. Every edge, seam and surface is finished to last a lifetime.</p>
+</div>
+<div class="trust-spec mb-9" aria-label="Eco Stone service standards">
+<div class="trust-spec-item"><div class="trust-spec-label">One team</div><div class="trust-spec-detail">Template to install</div></div>
+<div class="trust-spec-item"><div class="trust-spec-label">On schedule</div><div class="trust-spec-detail">Clean, tidy installs</div></div>
+<div class="trust-spec-item"><div class="trust-spec-label">Built to last</div><div class="trust-spec-detail">Sealed &amp; finished</div></div>
+</div>
+<a href="#work" class="group inline-flex items-center gap-3 text-[12px] font-medium tracking-[0.12em] uppercase text-ink link-underline pb-1">View selected work <span class="material-symbols-outlined text-[16px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<figure class="trust-editorial-image m-0">
+<img alt="Eco Stone black granite countertop and full-height backsplash installation" src="images/eco-stone-installer-black-granite-countertop-backsplash.webp" loading="lazy" decoding="async"/>
+</figure>
+</div>
+</section>
+
+<!-- Selected Work -->
+<section id="work" class="selected-work scroll-mt-24">
+<div class="selected-work-intro">
+<span class="eyebrow text-on-ink-muted block selected-work-scroll-eyebrow">Selected Work</span>
+<h2 class="selected-work-title"><span class="selected-work-scroll-line selected-work-scroll-line-1">Spaces shaped</span><span class="selected-work-scroll-line selected-work-scroll-line-2">by stone.</span></h2>
+<p class="selected-work-summary selected-work-scroll-summary">A selection of kitchens and interiors where material, proportion and craft come together.</p>
+</div>
+
+<div class="selected-work-gallery">
+<article id="project-01" class="project-chapter" aria-labelledby="project-01-title" data-project-chapter>
+<header class="project-header reveal">
+<div class="project-heading"><span class="project-number">Project 01 / 03</span><h3 id="project-01-title" class="project-title">Warm Wood<br/>Residence</h3></div>
+<div class="project-copy"><span class="project-scope">Kitchen · Dining · Living Room · Bathroom</span><p class="project-description">Pale stone runs from the long island to the quieter perimeter surfaces, set against warm oak and soft brass. Rounded ends and a restrained fireplace surround carry the same calm proportions through the main living spaces.</p></div>
+</header>
+<figure class="project-figure project-hero reveal">
+<button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-01-kitchen-3200.webp" data-project="Warm Wood Residence" data-room="Kitchen · Island and perimeter" aria-label="Open full-screen view of the Warm Wood Residence kitchen">
+<span class="project-image-frame project-image-frame--landscape"><img alt="Warm wood kitchen with a pale stone island, rounded end and matching perimeter surfaces" src="images/gallery/p01-01-kitchen-1200.webp" srcset="images/gallery/p01-01-kitchen-1200.webp 1200w, images/gallery/p01-01-kitchen-2400.webp 2400w, images/gallery/p01-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span>
+</button><figcaption class="project-caption"><span>Island and perimeter</span><span class="project-caption-room">Kitchen</span></figcaption>
+</figure>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-04-living-2400.webp" data-project="Warm Wood Residence" data-room="Living Room · Fireplace wall" aria-label="Open full-screen view of the living room fireplace wall"><span class="project-image-frame project-image-frame--landscape"><img alt="Living room with a pale stone fireplace surround and warm vertical wood detailing" src="images/gallery/p01-04-living-1200.webp" srcset="images/gallery/p01-04-living-1200.webp 1200w, images/gallery/p01-04-living-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Fireplace wall</span><span class="project-caption-room">Living Room</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-06-bathroom-2400.webp" data-project="Warm Wood Residence" data-room="Bathroom · Stone-lined bathing area" aria-label="Open full-screen view of the bathroom stonework"><span class="project-image-frame project-image-frame--portrait"><img alt="Bright bathroom with pale stone surfaces around the bathing area" src="images/gallery/p01-06-bathroom-1200.webp" srcset="images/gallery/p01-06-bathroom-1200.webp 1200w, images/gallery/p01-06-bathroom-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Restrained finish</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+</div>
+<div class="project-expand-control reveal"><button class="project-expand-toggle" type="button" aria-expanded="false" aria-controls="project-01-expanded" data-project-toggle data-project-name="Warm Wood Residence" data-photo-count="6"><span class="project-expand-text"><span class="project-expand-primary" data-open-label="Explore the full project" data-close-label="Close full project">Explore the full project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">6 photographs</span></span><span class="project-expand-icon" aria-hidden="true">+</span></button></div>
+<div id="project-01-expanded" class="project-expanded" hidden>
+<div class="project-expanded-inner">
+<section class="project-room-group" aria-labelledby="project-01-kitchen-label">
+<header class="project-room-heading"><h4 id="project-01-kitchen-label" class="project-room-title">Kitchen</h4><span class="project-room-note">Waterfall detail · Work wall</span></header>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-02-waterfall-2400.webp" data-project="Warm Wood Residence" data-room="Kitchen · Waterfall detail" aria-label="Open full-screen view of the waterfall island detail"><span class="project-image-frame project-image-frame--portrait"><img alt="Close view of a pale stone waterfall edge on a warm wood kitchen island" data-src="images/gallery/p01-02-waterfall-1200.webp" data-srcset="images/gallery/p01-02-waterfall-1200.webp 1200w, images/gallery/p01-02-waterfall-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Waterfall detail</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-03-backsplash-2400.webp" data-project="Warm Wood Residence" data-room="Kitchen · Work wall" aria-label="Open full-screen view of the kitchen work wall"><span class="project-image-frame project-image-frame--landscape"><img alt="Warm wood kitchen work wall with pale stone counters and backsplash" data-src="images/gallery/p01-03-backsplash-1200.webp" data-srcset="images/gallery/p01-03-backsplash-1200.webp 1200w, images/gallery/p01-03-backsplash-2400.webp 2400w" sizes="(min-width: 768px) 50vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Quiet continuity</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+</div>
+</section>
+<section class="project-room-group" aria-labelledby="project-01-living-label">
+<header class="project-room-heading"><h4 id="project-01-living-label" class="project-room-title">Living Room</h4><span class="project-room-note">Stone surround detail</span></header>
+<figure class="project-figure project-wide project-wide--left project-wide--portrait reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p01-05-fireplace-2400.webp" data-project="Warm Wood Residence" data-room="Living Room · Stone surround" aria-label="Open full-screen detail of the stone fireplace surround"><span class="project-image-frame project-image-frame--portrait"><img alt="Detailed view of the living room's pale stone fireplace surround" data-src="images/gallery/p01-05-fireplace-1200.webp" data-srcset="images/gallery/p01-05-fireplace-1200.webp 1200w, images/gallery/p01-05-fireplace-2400.webp 2400w" sizes="(min-width: 768px) 62vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Stone surround</span><span class="project-caption-room">Living Room</span></figcaption></figure>
+</section>
+<div class="project-collapse-control reveal"><button class="project-collapse-bottom" type="button" data-project-close aria-label="Close Warm Wood Residence full project"><span class="project-expand-text"><span class="project-expand-primary">Close project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">Return to opening</span></span><span class="project-expand-icon" aria-hidden="true">−</span></button></div>
+</div>
+</div>
+                </article>
+
+<article id="project-02" class="project-chapter" aria-labelledby="project-02-title" data-project-chapter>
+<header class="project-header reveal">
+<div class="project-heading"><span class="project-number">Project 02 / 03</span><h3 id="project-02-title" class="project-title">Black Stone<br/>Residence</h3></div>
+<div class="project-copy"><span class="project-scope">Kitchen · Bathroom · Living Room</span><p class="project-description">Dark, richly figured surfaces wrap the island, work wall and fireplace in one continuous material language. The result is graphic and grounded, with the stone carrying each room.</p></div>
+</header>
+<figure class="project-figure project-hero reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-01-kitchen-3200.webp" data-project="Black Stone Residence" data-room="Kitchen · Full installation" aria-label="Open full-screen view of the Black Stone Residence kitchen"><span class="project-image-frame project-image-frame--landscape"><img alt="Dark cabinetry kitchen with a richly figured stone island and full-height backsplash" src="images/gallery/p02-01-kitchen-1200.webp" srcset="images/gallery/p02-01-kitchen-1200.webp 1200w, images/gallery/p02-01-kitchen-2400.webp 2400w, images/gallery/p02-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Full installation</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-04-bathroom-2400.webp" data-project="Black Stone Residence" data-room="Bathroom · Vanity and shower" aria-label="Open full-screen view of the bathroom vanity and shower"><span class="project-image-frame project-image-frame--portrait"><img alt="Bathroom with dark vanity, pale stone surfaces and a glass shower" src="images/gallery/p02-04-bathroom-1200.webp" srcset="images/gallery/p02-04-bathroom-1200.webp 1200w, images/gallery/p02-04-bathroom-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Vanity and shower</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-06-fireplace-2400.webp" data-project="Black Stone Residence" data-room="Living Room · Fireplace" aria-label="Open full-screen view of the black stone fireplace"><span class="project-image-frame project-image-frame--portrait"><img alt="Living room with a floor-to-ceiling richly figured black stone fireplace" src="images/gallery/p02-06-fireplace-1200.webp" srcset="images/gallery/p02-06-fireplace-1200.webp 1200w, images/gallery/p02-06-fireplace-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Floor-to-ceiling stone</span><span class="project-caption-room">Living Room</span></figcaption></figure>
+</div>
+<div class="project-expand-control reveal"><button class="project-expand-toggle" type="button" aria-expanded="false" aria-controls="project-02-expanded" data-project-toggle data-project-name="Black Stone Residence" data-photo-count="6"><span class="project-expand-text"><span class="project-expand-primary" data-open-label="Explore the full project" data-close-label="Close full project">Explore the full project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">6 photographs</span></span><span class="project-expand-icon" aria-hidden="true">+</span></button></div>
+<div id="project-02-expanded" class="project-expanded" hidden>
+<div class="project-expanded-inner">
+<section class="project-room-group" aria-labelledby="project-02-kitchen-label">
+<header class="project-room-heading"><h4 id="project-02-kitchen-label" class="project-room-title">Kitchen</h4><span class="project-room-note">Waterfall end · Continuous work wall</span></header>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-02-waterfall-2400.webp" data-project="Black Stone Residence" data-room="Kitchen · Waterfall end" aria-label="Open full-screen view of the black stone waterfall end"><span class="project-image-frame project-image-frame--portrait"><img alt="Close view of a richly figured black stone waterfall island end" data-src="images/gallery/p02-02-waterfall-1200.webp" data-srcset="images/gallery/p02-02-waterfall-1200.webp 1200w, images/gallery/p02-02-waterfall-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Waterfall end</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-03-backsplash-2400.webp" data-project="Black Stone Residence" data-room="Kitchen · Continuous work wall" aria-label="Open full-screen view of the continuous stone work wall"><span class="project-image-frame project-image-frame--landscape"><img alt="Continuous dark stone countertop and backsplash beneath black cabinetry" data-src="images/gallery/p02-03-backsplash-1200.webp" data-srcset="images/gallery/p02-03-backsplash-1200.webp 1200w, images/gallery/p02-03-backsplash-2400.webp 2400w" sizes="(min-width: 768px) 50vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Continuous work wall</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+</div>
+</section>
+<section class="project-room-group" aria-labelledby="project-02-bathroom-label">
+<header class="project-room-heading"><h4 id="project-02-bathroom-label" class="project-room-title">Bathroom</h4><span class="project-room-note">Shower stonework</span></header>
+<figure class="project-figure project-wide project-wide--left project-wide--portrait reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p02-05-shower-2400.webp" data-project="Black Stone Residence" data-room="Bathroom · Shower stonework" aria-label="Open full-screen view of the bathroom shower stonework"><span class="project-image-frame project-image-frame--portrait"><img alt="Glass shower with pale stone walls and carefully aligned veining" data-src="images/gallery/p02-05-shower-1200.webp" data-srcset="images/gallery/p02-05-shower-1200.webp 1200w, images/gallery/p02-05-shower-2400.webp 2400w" sizes="(min-width: 768px) 62vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Aligned surfaces</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+</section>
+<div class="project-collapse-control reveal"><button class="project-collapse-bottom" type="button" data-project-close aria-label="Close Black Stone Residence full project"><span class="project-expand-text"><span class="project-expand-primary">Close project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">Return to opening</span></span><span class="project-expand-icon" aria-hidden="true">−</span></button></div>
+</div>
+</div>
+                </article>
+
+<article id="project-03" class="project-chapter" aria-labelledby="project-03-title" data-project-chapter>
+<header class="project-header reveal">
+<div class="project-heading"><span class="project-number">Project 03 / 03</span><h3 id="project-03-title" class="project-title">Light Wood<br/>Residence</h3></div>
+<div class="project-copy"><span class="project-scope">Kitchen · Bathroom</span><p class="project-description">A pale, softly veined surface brings quiet contrast to warm cabinetry and a dark island. In the ensuite, the same restrained palette continues through the long vanity and wall finishes.</p></div>
+</header>
+<figure class="project-figure project-hero reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-01-kitchen-3200.webp" data-project="Light Wood Residence" data-room="Kitchen · Waterfall island" aria-label="Open full-screen view of the Light Wood Residence kitchen"><span class="project-image-frame project-image-frame--landscape"><img alt="Light wood kitchen with a dark island wrapped in pale stone" src="images/gallery/p03-01-kitchen-1200.webp" srcset="images/gallery/p03-01-kitchen-1200.webp 1200w, images/gallery/p03-01-kitchen-2400.webp 2400w, images/gallery/p03-01-kitchen-3200.webp 3200w" sizes="(min-width: 1024px) 88vw, (min-width: 768px) calc(100vw - 160px), calc(100vw - 44px)" width="3200" height="2137" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Waterfall island</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-04-vanity-2400.webp" data-project="Light Wood Residence" data-room="Bathroom · Double vanity" aria-label="Open full-screen view of the bathroom double vanity"><span class="project-image-frame project-image-frame--landscape"><img alt="Bright bathroom with a long double vanity and pale stone counter and wall surfaces" src="images/gallery/p03-04-vanity-1200.webp" srcset="images/gallery/p03-04-vanity-1200.webp 1200w, images/gallery/p03-04-vanity-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Long double vanity</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-06-vanity-2400.webp" data-project="Light Wood Residence" data-room="Bathroom · Stone counter" aria-label="Open full-screen detail of the bathroom stone counter"><span class="project-image-frame project-image-frame--landscape"><img alt="Detailed angle across a pale stone double vanity counter" src="images/gallery/p03-06-vanity-1200.webp" srcset="images/gallery/p03-06-vanity-1200.webp 1200w, images/gallery/p03-06-vanity-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="2400" height="1603" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Integrated counter</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+</div>
+<div class="project-expand-control reveal"><button class="project-expand-toggle" type="button" aria-expanded="false" aria-controls="project-03-expanded" data-project-toggle data-project-name="Light Wood Residence" data-photo-count="6"><span class="project-expand-text"><span class="project-expand-primary" data-open-label="Explore the full project" data-close-label="Close full project">Explore the full project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">6 photographs</span></span><span class="project-expand-icon" aria-hidden="true">+</span></button></div>
+<div id="project-03-expanded" class="project-expanded" hidden>
+<div class="project-expanded-inner">
+<section class="project-room-group" aria-labelledby="project-03-kitchen-label">
+<header class="project-room-heading"><h4 id="project-03-kitchen-label" class="project-room-title">Kitchen</h4><span class="project-room-note">Island detail · Full room</span></header>
+<div class="project-duo">
+<figure class="project-figure reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-02-island-2400.webp" data-project="Light Wood Residence" data-room="Kitchen · Island detail" aria-label="Open full-screen view of the pale stone island detail"><span class="project-image-frame project-image-frame--portrait"><img alt="Close view of the pale stone island and waterfall edge beneath black pendants" data-src="images/gallery/p03-02-island-1200.webp" data-srcset="images/gallery/p03-02-island-1200.webp 1200w, images/gallery/p03-02-island-2400.webp 2400w" sizes="(min-width: 768px) 36vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Waterfall detail</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+<figure class="project-figure reveal reveal-d1"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-03-kitchen-2400.webp" data-project="Light Wood Residence" data-room="Kitchen · Full room" aria-label="Open full-screen view of the full kitchen"><span class="project-image-frame project-image-frame--portrait"><img alt="Full light wood kitchen with pale stone worktops and a dark central island" data-src="images/gallery/p03-03-kitchen-1200.webp" data-srcset="images/gallery/p03-03-kitchen-1200.webp 1200w, images/gallery/p03-03-kitchen-2400.webp 2400w" sizes="(min-width: 768px) 44vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Material balance</span><span class="project-caption-room">Kitchen</span></figcaption></figure>
+</div>
+</section>
+<section class="project-room-group" aria-labelledby="project-03-bathroom-label">
+<header class="project-room-heading"><h4 id="project-03-bathroom-label" class="project-room-title">Bathroom</h4><span class="project-room-note">Vanity elevation</span></header>
+<figure class="project-figure project-wide project-wide--left project-wide--portrait reveal"><button class="project-image-button" type="button" data-gallery-item data-full="images/gallery/p03-05-bathroom-2400.webp" data-project="Light Wood Residence" data-room="Bathroom · Vanity elevation" aria-label="Open full-screen view of the bathroom vanity elevation"><span class="project-image-frame project-image-frame--portrait"><img alt="Front elevation of a double vanity with a pale stone counter and illuminated mirror" data-src="images/gallery/p03-05-bathroom-1200.webp" data-srcset="images/gallery/p03-05-bathroom-1200.webp 1200w, images/gallery/p03-05-bathroom-2400.webp 2400w" sizes="(min-width: 768px) 62vw, calc(100vw - 44px)" width="1603" height="2400" loading="lazy" decoding="async"/></span></button><figcaption class="project-caption"><span>Vanity elevation</span><span class="project-caption-room">Bathroom</span></figcaption></figure>
+</section>
+<div class="project-collapse-control reveal"><button class="project-collapse-bottom" type="button" data-project-close aria-label="Close Light Wood Residence full project"><span class="project-expand-text"><span class="project-expand-primary">Close project</span><span class="project-expand-separator" aria-hidden="true">—</span><span class="project-expand-meta">Return to opening</span></span><span class="project-expand-icon" aria-hidden="true">−</span></button></div>
+</div>
+</div>
+                </article>
+</div>
+</section>
+
+<div id="galleryLightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Selected Work image viewer" hidden>
+<div class="gallery-lightbox-header"><div class="gallery-lightbox-meta" aria-live="polite"><div id="galleryLightboxProject" class="gallery-lightbox-project"></div><div id="galleryLightboxDetail" class="gallery-lightbox-detail"></div></div><div id="galleryLightboxCount" class="gallery-lightbox-count"></div></div>
+<div class="gallery-lightbox-stage"><img id="galleryLightboxImage" class="gallery-lightbox-image" alt=""/><button id="galleryLightboxPrev" class="gallery-lightbox-control gallery-lightbox-prev" type="button" aria-label="Previous image" title="Previous image"><span class="material-symbols-outlined">arrow_back</span></button><button id="galleryLightboxNext" class="gallery-lightbox-control gallery-lightbox-next" type="button" aria-label="Next image" title="Next image"><span class="material-symbols-outlined">arrow_forward</span></button></div>
+<button id="galleryLightboxClose" class="gallery-lightbox-control gallery-lightbox-close" type="button" aria-label="Close image viewer" title="Close image viewer"><span class="material-symbols-outlined">close</span></button>
+</div>
+
+<!-- Services — split image + numbered list (light) -->
+<section id="services" class="bg-sand text-ink scroll-mt-24">
+<div class="grid lg:grid-cols-2 items-stretch">
+<div class="relative min-h-[56vh] lg:min-h-[86vh] order-1 lg:order-none reveal">
+<img alt="Black stone countertop and matching full-height backsplash fabricated by Eco Stone" class="absolute inset-0 w-full h-full object-cover" src="images/services-dsc00863-1400.webp" srcset="images/services-dsc00863-1400.webp 1400w, images/services-dsc00863-2400.webp 2400w" sizes="(min-width: 1024px) 50vw, 100vw" width="2400" height="1604" style="object-position: 53% 48%;" loading="lazy" decoding="async"/>
+</div>
+<div class="flex items-center px-margin-mobile md:px-margin-desktop py-24 md:py-32 lg:py-40 reveal reveal-d1">
+<div class="w-full max-w-xl mx-auto lg:mx-0 lg:pl-4">
+<span class="eyebrow text-ink/65 block mb-8">What we do</span>
+<h2 class="display-sm text-ink mb-8">Fabrication and installation, handled end to end.</h2>
+<p class="lead text-ink/70 max-w-md mb-14">One team, one standard — from slab selection through to the final sealed surface in your home.</p>
+<ul>
+<li><a href="#contact" class="row-link group flex items-center justify-between gap-6 border-t border-ink/15 py-6"><span class="flex items-baseline gap-6"><span class="text-[12px] text-ink/65 tabular-nums pt-1">01</span><span><span class="block text-2xl md:text-3xl text-ink">Custom fabrication</span><span class="block text-sm text-ink/65 mt-1.5">Precision cutting, mitred edges and book-matched slabs.</span></span></span><span class="material-symbols-outlined text-ink/65">north_east</span></a></li>
+<li><a href="#contact" class="row-link group flex items-center justify-between gap-6 border-t border-ink/15 py-6"><span class="flex items-baseline gap-6"><span class="text-[12px] text-ink/65 tabular-nums pt-1">02</span><span><span class="block text-2xl md:text-3xl text-ink">Digital templating</span><span class="block text-sm text-ink/65 mt-1.5">Laser-accurate measurement so every surface fits, first time.</span></span></span><span class="material-symbols-outlined text-ink/65">north_east</span></a></li>
+<li><a href="#contact" class="row-link group flex items-center justify-between gap-6 border-t border-b border-ink/15 py-6"><span class="flex items-baseline gap-6"><span class="text-[12px] text-ink/65 tabular-nums pt-1">03</span><span><span class="block text-2xl md:text-3xl text-ink">Clean installation</span><span class="block text-sm text-ink/65 mt-1.5">Careful, tidy, on-schedule installs — sealed and finished.</span></span></span><span class="material-symbols-outlined text-ink/65">north_east</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Process -->
+<section id="process" class="process-feature scroll-mt-24">
+<div class="process-feature-inner">
+<div class="process-feature-header reveal">
+<span class="eyebrow process-feature-eyebrow">Built around your space</span>
+<h2 class="process-feature-title">Stonework that<br class="process-break-mobile"/> feels<br/>considered from<br class="process-break-narrow"/> every angle.</h2>
+</div>
+<div class="process-sequence">
+<div class="process-step reveal">
+<span class="process-step-number tabular-nums">01</span>
+<div><h3 class="process-step-title">Consult</h3><p class="process-step-description">We review your space, your materials and your intent — and help you choose the right stone for it.</p></div>
+</div>
+<div class="process-step reveal reveal-d1">
+<span class="process-step-number tabular-nums">02</span>
+<div><h3 class="process-step-title">Fabricate</h3><p class="process-step-description">Your slabs are templated and cut to precise tolerances, then hand-finished in our shop.</p></div>
+</div>
+<div class="process-step reveal reveal-d2">
+<span class="process-step-number tabular-nums">03</span>
+<div><h3 class="process-step-title">Install</h3><p class="process-step-description">We install cleanly and seal every surface — leaving a finished space and no mess behind.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Founder -->
+<section class="founder-feature">
+<div class="founder-layout">
+<div class="founder-media">
+<img alt="Dom, founder of Eco Stone, in a completed kitchen" class="founder-image reveal" src="images/founder-editorial.webp" srcset="images/founder-editorial-900.webp 900w, images/founder-editorial.webp 1800w" sizes="(min-width: 1024px) 46vw, 100vw" width="1800" height="2694" loading="lazy" decoding="async"/>
+</div>
+<div class="founder-content">
+<div class="founder-content-inner reveal reveal-d1">
+<span class="eyebrow text-muted block founder-eyebrow">The people behind the work</span>
+<blockquote class="founder-quote"><span class="founder-quote-line">Stone is permanent.</span><span class="founder-quote-line">We treat every install</span><span class="founder-quote-line">like it will <span class="accent">outlast us</span></span><span class="founder-quote-line">— because it will.</span></blockquote>
+<p class="founder-story">Eco Stone is a small, hands-on team. The people who quote your project are the people who template, fabricate and install it — so nothing is lost between the drawing and your home.</p>
+<div class="founder-signature"><span class="founder-signature-rule" aria-hidden="true"></span><div><div class="founder-name">Dom</div><div class="founder-role">Founder, Eco Stone</div></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Final CTA + Footer (dark) -->
+<footer id="contact" class="bg-ink text-on-ink scroll-mt-24">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-24 md:pt-40 pb-14">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-14 pb-24 md:pb-36 reveal">
+<div>
+<span class="eyebrow text-on-ink-muted block mb-8">Start a project</span>
+<h2 class="display text-on-ink">Let's make yours<br/><span class="accent" style="font-size:1.1em">beautiful.</span></h2>
+</div>
+<a href="mailto:info@eco-stone.ca" class="group shrink-0 flex items-center justify-center w-40 h-40 md:w-48 md:h-48 rounded-full border border-white/30 hover:bg-on-ink hover:text-ink transition-colors duration-500 self-start lg:self-auto">
+<span class="flex items-center gap-2 text-[13px] tracking-[0.06em]">Get a quote <span class="material-symbols-outlined text-[17px] transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></span>
+</a>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pt-14 border-t border-white/12">
+<div class="md:col-span-5">
+<a class="flex items-center gap-3 mb-6" href="#top" aria-label="Eco Stone home">
+<svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+<path d="M12 2C7 6 5 10 5 14a7 7 0 0 0 14 0c0-4-2-8-7-12Z" stroke="currentColor" stroke-width="1.2"/>
+<path d="M12 4.5C12 9 12 15 12 20.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+<span class="text-[15px] font-medium tracking-[0.24em]">ECO STONE</span>
+</a>
+<p class="lead text-on-ink-muted max-w-xs">Custom stone fabrication and installation. Serving Southern Ontario.</p>
+</div>
+<div class="md:col-span-3 md:col-start-7">
+<h4 class="eyebrow text-on-ink-muted mb-6">Explore</h4>
+<ul class="space-y-3">
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#work">Projects</a></li>
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#services">Services</a></li>
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#process">Process</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="eyebrow text-on-ink-muted mb-6">Contact</h4>
+<ul class="space-y-3">
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="mailto:info@eco-stone.ca">info@eco-stone.ca</a></li>
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="tel:+19056167157">905&nbsp;616&nbsp;7157</a></li>
+<li><a class="text-sm text-on-ink/80 hover:text-on-ink transition-colors" href="#top">Back to top ↑</a></li>
+</ul>
+</div>
+</div>
+
+<div class="mt-16 pt-8 border-t border-white/12 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-[11px] tracking-[0.12em] text-on-ink-muted uppercase">© 2026 Eco Stone. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="text-[11px] tracking-[0.12em] text-on-ink-muted hover:text-on-ink transition-colors uppercase" href="#">Privacy</a>
+<a class="text-[11px] tracking-[0.12em] text-on-ink-muted hover:text-on-ink transition-colors uppercase" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+
+</main>
+
+<script>
+    // Scroll reveal
+    (function () {
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var els = document.querySelectorAll('.reveal');
+        if (reduce || !('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        els.forEach(function (el) { io.observe(el); });
+    })();
+
+    // Adaptive header
+    (function () {
+        var h = document.getElementById('siteHeader');
+        if (!h) return;
+        var ticking = false;
+        function applyState() {
+            ticking = false;
+            h.classList.toggle('scrolled', window.scrollY > 60);
+            h.classList.add('state-ready');
+        }
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(applyState);
+        }
+        applyState();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('pageshow', applyState);
+    })();
+
+    // Selected Work scroll-linked text reveal
+    (function () {
+        var intro = document.querySelector('.selected-work-intro');
+        if (!intro || !window.requestAnimationFrame) return;
+
+        var eyebrow = intro.querySelector('.selected-work-scroll-eyebrow');
+        var lineOne = intro.querySelector('.selected-work-scroll-line-1');
+        var lineTwo = intro.querySelector('.selected-work-scroll-line-2');
+        var summary = intro.querySelector('.selected-work-scroll-summary');
+        if (!eyebrow || !lineOne || !lineTwo || !summary) return;
+
+        var motionQuery = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+        var elements = [eyebrow, lineOne, lineTwo, summary];
+        var enabled = false;
+        var ticking = false;
+
+        function clamp(value) {
+            return Math.min(1, Math.max(0, value));
+        }
+
+        function smoothstep(start, end, value) {
+            var progress = clamp((value - start) / (end - start));
+            return progress * progress * (3 - (2 * progress));
+        }
+
+        function setState(element, progress, minimumOpacity, distance) {
+            element.style.opacity = String(minimumOpacity + (progress * (1 - minimumOpacity)));
+            element.style.transform = 'translate3d(0,' + ((1 - progress) * distance).toFixed(2) + 'px,0)';
+        }
+
+        function render() {
+            ticking = false;
+            if (!enabled) return;
+
+            var rect = intro.getBoundingClientRect();
+            var titleRect = lineOne.parentElement.getBoundingClientRect();
+            var summaryRect = summary.getBoundingClientRect();
+            var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            var introProgress = clamp(((viewportHeight * .92) - rect.top) / (viewportHeight * .72));
+            var headlineProgress = clamp(((viewportHeight * .92) - titleRect.top) / (viewportHeight * .52));
+            var summaryProgress = clamp(((viewportHeight * .94) - summaryRect.top) / (viewportHeight * .30));
+
+            setState(eyebrow, smoothstep(0, .24, introProgress), .28, 6);
+            setState(lineOne, smoothstep(.05, .62, headlineProgress), .16, 10);
+            setState(lineTwo, smoothstep(.28, .90, headlineProgress), .12, 10);
+            setState(summary, smoothstep(.15, .95, summaryProgress), .24, 6);
+        }
+
+        function requestRender() {
+            if (!ticking) {
+                ticking = true;
+                window.requestAnimationFrame(render);
+            }
+        }
+
+        function clearState() {
+            elements.forEach(function (element) {
+                element.style.removeProperty('opacity');
+                element.style.removeProperty('transform');
+            });
+        }
+
+        function setMotion(reduce) {
+            enabled = !reduce;
+            document.documentElement.classList.toggle('work-scroll-reveal-ready', enabled);
+            if (enabled) render();
+            else clearState();
+        }
+
+        window.addEventListener('scroll', requestRender, { passive: true });
+        window.addEventListener('resize', requestRender);
+        setMotion(motionQuery && motionQuery.matches);
+
+        if (motionQuery) {
+            if (motionQuery.addEventListener) motionQuery.addEventListener('change', function (event) { setMotion(event.matches); });
+            else if (motionQuery.addListener) motionQuery.addListener(function (event) { setMotion(event.matches); });
+        }
+    })();
+
+    // Hero video reduced-motion
+    (function () {
+        var hv = document.getElementById('heroVideo');
+        if (!hv) return;
+        var motionQuery = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+        var sources = hv.querySelectorAll('source');
+        var motionEnabled = false;
+
+        function setMotion(reduce) {
+            if (reduce) {
+                motionEnabled = false;
+                hv.pause();
+                hv.preload = 'none';
+                sources.forEach(function (source) { source.removeAttribute('src'); });
+                hv.load();
+                return;
+            }
+
+            hv.preload = 'auto';
+            sources.forEach(function (source) {
+                source.setAttribute('src', source.getAttribute('data-motion-src'));
+            });
+            if (!motionEnabled) hv.load();
+            motionEnabled = true;
+            var p = hv.play();
+            if (p && p.catch) p.catch(function () {});
+        }
+
+        setMotion(motionQuery && motionQuery.matches);
+        if (motionQuery) {
+            if (motionQuery.addEventListener) motionQuery.addEventListener('change', function (event) { setMotion(event.matches); });
+            else if (motionQuery.addListener) motionQuery.addListener(function (event) { setMotion(event.matches); });
+        }
+    })();
+
+    // Selected Work progressive disclosure
+    (function () {
+        var toggles = Array.prototype.slice.call(document.querySelectorAll('[data-project-toggle]'));
+        if (!toggles.length) return;
+
+        var motionQuery = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        function prefersReducedMotion() {
+            return motionQuery && motionQuery.matches;
+        }
+
+        function hydrateImages(panel) {
+            panel.querySelectorAll('img[data-src]').forEach(function (img) {
+                img.setAttribute('loading', 'eager');
+                if (img.getAttribute('data-srcset')) {
+                    img.setAttribute('srcset', img.getAttribute('data-srcset'));
+                    img.removeAttribute('data-srcset');
+                }
+                img.setAttribute('src', img.getAttribute('data-src'));
+                img.removeAttribute('data-src');
+            });
+        }
+
+        function updateToggle(button, expanded) {
+            var projectName = button.getAttribute('data-project-name') || 'this project';
+            var photoCount = button.getAttribute('data-photo-count') || '';
+            var label = button.querySelector('.project-expand-primary');
+            var icon = button.querySelector('.project-expand-icon');
+            if (label) label.textContent = expanded ? label.getAttribute('data-close-label') : label.getAttribute('data-open-label');
+            if (icon) icon.textContent = expanded ? '−' : '+';
+            button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            button.setAttribute('aria-label', expanded ? 'Close full project for ' + projectName : 'Explore the full ' + projectName + ' project, ' + photoCount + ' photographs');
+        }
+
+        function openProject(article, button, panel) {
+            hydrateImages(panel);
+            article.classList.add('is-expanded');
+            updateToggle(button, true);
+            panel.hidden = false;
+
+            if (prefersReducedMotion()) {
+                panel.classList.add('is-open');
+                panel.style.height = 'auto';
+                return;
+            }
+
+            panel.style.height = '0px';
+            window.requestAnimationFrame(function () {
+                panel.classList.add('is-open');
+                panel.style.height = panel.scrollHeight + 'px';
+            });
+
+            panel.addEventListener('transitionend', function onEnd(event) {
+                if (event.propertyName !== 'height') return;
+                panel.style.height = 'auto';
+                panel.removeEventListener('transitionend', onEnd);
+            });
+        }
+
+        function scrollToProjectOpening(article) {
+            var target = article.querySelector('.project-header') || article;
+            var siteHeader = document.getElementById('siteHeader');
+            var offset = (siteHeader ? siteHeader.offsetHeight : 0) + 112;
+            var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: Math.max(0, top), behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+        }
+
+        function closeProject(article, button, panel, returnToOpening) {
+            article.classList.remove('is-expanded');
+            updateToggle(button, false);
+
+            if (prefersReducedMotion()) {
+                panel.classList.remove('is-open');
+                panel.hidden = true;
+                panel.style.height = '0px';
+                if (returnToOpening) scrollToProjectOpening(article);
+                return;
+            }
+
+            panel.style.height = panel.scrollHeight + 'px';
+            window.requestAnimationFrame(function () {
+                panel.classList.remove('is-open');
+                panel.style.height = '0px';
+            });
+
+            panel.addEventListener('transitionend', function onEnd(event) {
+                if (event.propertyName !== 'height') return;
+                panel.hidden = true;
+                panel.removeEventListener('transitionend', onEnd);
+                if (returnToOpening) scrollToProjectOpening(article);
+            });
+        }
+
+        toggles.forEach(function (button) {
+            var article = button.closest('[data-project-chapter]');
+            var panel = document.getElementById(button.getAttribute('aria-controls'));
+            if (!article || !panel) return;
+
+            updateToggle(button, false);
+            button.addEventListener('mouseenter', function () { hydrateImages(panel); }, { once: true });
+            button.addEventListener('focus', function () { hydrateImages(panel); }, { once: true });
+            button.addEventListener('click', function () {
+                if (button.getAttribute('aria-expanded') === 'true') closeProject(article, button, panel, false);
+                else openProject(article, button, panel);
+            });
+
+            article.querySelectorAll('[data-project-close]').forEach(function (closeButton) {
+                closeButton.addEventListener('click', function () { closeProject(article, button, panel, true); });
+            });
+        });
+    })();
+
+    // Selected Work image viewer
+    (function () {
+        var viewer = document.getElementById('galleryLightbox');
+        var image = document.getElementById('galleryLightboxImage');
+        var project = document.getElementById('galleryLightboxProject');
+        var detail = document.getElementById('galleryLightboxDetail');
+        var count = document.getElementById('galleryLightboxCount');
+        var closeButton = document.getElementById('galleryLightboxClose');
+        var previousButton = document.getElementById('galleryLightboxPrev');
+        var nextButton = document.getElementById('galleryLightboxNext');
+        var items = Array.prototype.slice.call(document.querySelectorAll('[data-gallery-item]'));
+        if (!viewer || !image || !items.length) return;
+
+        var currentIndex = 0;
+        var activeItems = items;
+        var lastTrigger = null;
+        var touchStartX = 0;
+
+        function show(index) {
+            var list = activeItems.length ? activeItems : items;
+            currentIndex = (index + list.length) % list.length;
+            var item = list[currentIndex];
+            var thumbnail = item.querySelector('img');
+            image.src = item.getAttribute('data-full');
+            image.alt = thumbnail ? thumbnail.alt : '';
+            project.textContent = item.getAttribute('data-project') || '';
+            detail.textContent = item.getAttribute('data-room') || '';
+            count.textContent = String(currentIndex + 1).padStart(2, '0') + ' / ' + String(list.length).padStart(2, '0');
+        }
+
+        function open(trigger) {
+            var projectName = trigger.getAttribute('data-project');
+            activeItems = items.filter(function (item) { return item.getAttribute('data-project') === projectName; });
+            lastTrigger = trigger;
+            show(activeItems.indexOf(trigger));
+            viewer.hidden = false;
+            document.body.classList.add('gallery-viewer-open');
+            window.requestAnimationFrame(function () {
+                viewer.classList.add('is-open');
+                closeButton.focus();
+            });
+        }
+
+        function close() {
+            viewer.classList.remove('is-open');
+            viewer.hidden = true;
+            image.removeAttribute('src');
+            document.body.classList.remove('gallery-viewer-open');
+            if (lastTrigger) lastTrigger.focus();
+        }
+
+        items.forEach(function (item, index) {
+            item.addEventListener('click', function () { open(item); });
+        });
+
+        previousButton.addEventListener('click', function () { show(currentIndex - 1); });
+        nextButton.addEventListener('click', function () { show(currentIndex + 1); });
+        closeButton.addEventListener('click', close);
+        viewer.querySelector('.gallery-lightbox-stage').addEventListener('click', function (event) {
+            if (event.target === event.currentTarget) close();
+        });
+
+        viewer.addEventListener('touchstart', function (event) {
+            touchStartX = event.changedTouches[0].clientX;
+        }, { passive: true });
+        viewer.addEventListener('touchend', function (event) {
+            var distance = event.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(distance) < 50) return;
+            show(currentIndex + (distance < 0 ? 1 : -1));
+        }, { passive: true });
+
+        document.addEventListener('keydown', function (event) {
+            if (viewer.hidden) return;
+            if (event.key === 'Escape') close();
+            if (event.key === 'ArrowLeft') show(currentIndex - 1);
+            if (event.key === 'ArrowRight') show(currentIndex + 1);
+            if (event.key === 'Tab') {
+                var controls = [closeButton, previousButton, nextButton];
+                var position = controls.indexOf(document.activeElement);
+                event.preventDefault();
+                controls[(position + (event.shiftKey ? controls.length - 1 : 1)) % controls.length].focus();
+            }
+        });
+    })();
+
+    // Mobile menu
+    (function () {
+        var btn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu'), closeBtn = document.getElementById('menuClose');
+        if (!btn || !menu) return;
+        function open() { menu.classList.remove('hidden'); menu.classList.add('flex'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+        function close() { menu.classList.add('hidden'); menu.classList.remove('flex'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+        btn.addEventListener('click', open);
+        closeBtn.addEventListener('click', close);
+        menu.querySelectorAll('[data-close]').forEach(function (a) { a.addEventListener('click', close); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.classList.contains('hidden')) close(); });
+    })();
+</script>
+</body></html>
